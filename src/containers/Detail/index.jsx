@@ -10,11 +10,12 @@ import Credits from '../../components/Credits'
 
 
 function Detail() {
-  const {id} = useParams()
-  const [movie, setmovie] = useState()
-  const [movieVideos, setMovieVideos] = useState()
-  const [movieCredits, setMovieCredits] = useState()
-  const [movieSimilar, setMovieSimilar] = useState()
+  const {id} = useParams();
+  const [movie, setmovie] = useState();
+  const [movieVideos, setMovieVideos] = useState();
+  const [movieCredits, setMovieCredits] = useState();
+  const [movieSimilar, setMovieSimilar] = useState();
+  
     useEffect(() => {
         async function getAllData() {
           

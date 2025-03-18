@@ -1,27 +1,20 @@
-import { data } from "react-router-dom";
-import api from "./api";
+import api from "../services/api";
 
 export async function getMovies(){
-    const {
-        data: { results } 
-      } =  await api.get('/movie/popular')
+    const {data: { results }} =  await api.get('/movie/popular')
 
-      return results[4]
+      return results[0]
 
 }
 
  export async function getTopMovies() {
-    const {
-      data: { results } 
-    } =  await api.get('/movie/top_rated')
+    const {data: { results }} =  await api.get('/movie/top_rated')
 
     return results
 }
 
  export async function getTopSeries() {
-    const {
-      data: { results } 
-    } =  await api.get('/tv/top_rated')
+    const {data: { results }} =  await api.get('/tv/top_rated')
 
     return results
 }
@@ -35,27 +28,22 @@ export async function getPopularSeries() {
 }
 
 export async function getTopPeople() {
-    const {
-      data: { results } 
-    } =  await api.get('/person/popular')
+    const {data: { results }} =  await api.get('/person/popular')
     
     return results
 
 }
 
+//Buscar o filme pelo iD
 export async function getMovieVideos (movieId) {
-    const {
-      data: { results } 
-    } =  await api.get(`/movie/${movieId}/videos`)
+    const {data: { results }} =  await api.get(`/movie/${movieId}/videos`)
 
     return results 
 
 }
 
 export async function getMovieCredits (movieId) {
-  const { 
-    data: { cast }
-   } =  await api.get(`/movie/${movieId}/credits`)
+  const {data: { cast }} =  await api.get(`/movie/${movieId}/credits`)
     
   return cast
    
@@ -63,9 +51,7 @@ export async function getMovieCredits (movieId) {
 
 }
 export async function getMovieSimilar (movieId) {
-  const {
-    data: { results } 
-  } =  await api.get(`/movie/${movieId}/similar`)
+  const {data: { results }} =  await api.get(`/movie/${movieId}/similar`)
 
   return results 
 

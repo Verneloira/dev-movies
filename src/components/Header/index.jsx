@@ -19,7 +19,7 @@ function Header(){
 
 
     return(
-        <Container changeBackground={changeBackground}>
+        <Container $changeBackground={changeBackground}>
             <img src={Logo} alt='logo-dev-movies'/>
         <Menu>
             <Li className={pathname === '/' ? "active" : ""}>

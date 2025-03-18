@@ -6,15 +6,16 @@ function Modal ({ movieId, setShowModal}) {
     const [movie, setMovie] = useState()
 
     useEffect(() => {
-        async function getMoviesVideos() {
+        async function getMovies() {
             setMovie(await getMovieVideos(movieId))
         }
 
-        getMoviesVideos() 
-    }, [])
+        getMovies()
+        
+    },[])
 
     return (
-        <Background onClick={() => setShowModal(false) }>
+        <Background onClick={() => setShowModal(false)}>
            {movie && (
                 <Container>
                     <iframe

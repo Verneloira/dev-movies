@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import Button from '../../components/Button'
-import Modal from '../../components/Modal'
-import Slider from '../../components/Slider'
-import { getImages } from '../../utils/getImages'
-import { Background, Info, Poster, Container, ContainerButtons } from './styles'
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Button from '../../components/Button';
+import Modal from '../../components/Modal';
+import Slider from '../../components/Slider';
+import { getImages } from '../../utils/getImages';
+import { Background, Info, Poster, Container, ContainerButtons } from './styles';
 import { getMovies, getPopularSeries, getTopMovies, getTopPeople, getTopSeries } from '../../services/getData'
 
 const  Home = () => {
@@ -31,13 +31,13 @@ const  Home = () => {
           setTopMovies(topMovies);
           setTopSeries(topSeries);
           setPopularSeries(popularSeries);
-          setTopPeople(topPeople);
+          setTopPeople(topPeople)
         })
         .catch((error) => console.error(error));
     }
 
-    getAllData();
-  }, []);
+    getAllData()
+  }, [])
 
   return (
     <>

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { getTopMovies } from '../../services/getData';
-import Slider from '../../components/Slider';
-import { Container } from './styles';
+import React, { useEffect, useState } from 'react'
+import { getTopMovies } from '../../services/getData'
+import Slider from '../../components/Slider'
+import { Container } from './styles'
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -12,7 +12,7 @@ const Movies = () => {
             setMovies(topMovies);
         }
         fetchMovies();
-    }, []);
+    }, [])
 
     return (
         <Container>
@@ -21,4 +21,4 @@ const Movies = () => {
     );
 };
 
-export default Movies;
+export default Movies
