@@ -8,7 +8,7 @@
 <br>
 <h2>Tecnologias utilizadas</h2>
 <br>
-<p>- HTML</p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white/>
 <p>-CSS</p>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 <p>React</p>
