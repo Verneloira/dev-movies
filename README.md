@@ -10,5 +10,5 @@
 <br>
 <p>- HTML</p>
 <p>-CSS</p>
-<p>-JS</p>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 <p>React</p>
